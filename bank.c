@@ -1,9 +1,13 @@
 #include<stdio.h>
 
-
+#define RED "\x1B[31m"
+#define GREEN "\x1B[32m"
+#define RESET "\x1B[0m"
 
 int main ()
 {
+
+
     int task, exit=1; 
     int deposite,withdraw;
 
@@ -46,7 +50,8 @@ int main ()
 
                                         if (balance>=500)
                                         {
-                                            printf("\n\n*****Thank you to join india bank***** \nyour account details:\n");
+                                            printf(GREEN"\n\n*****Thank you to join india bank*****"RESET);
+                                            printf("\nyour account details:\n");
                                             printf("Account Number: %lld\n",account_no);
                                             printf("Account Holder Name: %s\n", name);
                                             printf("Account Balance: %d\n\n", balance);
@@ -119,7 +124,7 @@ int main ()
             }
             else
             {
-                printf("Sorry! Please create account first....\n");
+                printf(RED"Sorry! Please create account first....\n"RESET);
             }
         
                 
@@ -144,7 +149,7 @@ int main ()
             }
             else
             {
-                printf("Sorry! Please create account first....\n");
+                printf(RED"Sorry! Please create account first....\n"RESET);
             }
         }
 
@@ -155,7 +160,7 @@ int main ()
             }
             else
             {
-                printf("Sorry! Please create account first....\n");
+                printf(RED"Sorry! Please create account first....\n"RESET);
             }
 
         }
