@@ -156,7 +156,7 @@ int main ()
         else if (task==4)
         {    if (account_no > 10000000000 && account_no <100000000000)
             {
-                printf("Your account Balance is: %d\n", balance);
+                printf(GREEN"Your account Balance is: %d\n"RESET, balance);
             }
             else
             {
